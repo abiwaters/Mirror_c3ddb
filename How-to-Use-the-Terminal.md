@@ -1,0 +1,1 @@
+Once logged into c3ddb, you will see a command prompt. The text prompt displayed to you is called the “terminal” and the program you interact with is called a “shell“. Inside each shell, you will communicate with the operating system and filesystem using “commands“. 
