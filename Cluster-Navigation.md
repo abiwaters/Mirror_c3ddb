@@ -1,0 +1,1 @@
+This page describes the filesystem structure on c3ddb as well as commands for basic navigation and file manipulation on the system. 
