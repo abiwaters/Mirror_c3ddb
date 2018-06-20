@@ -1,5 +1,4 @@
 **My SSH key is not working:** 
-
 First, make sure you are using the private key (ends with .ppk) and not the public key. 
 Next, make sure that the read permissions are set appropriately with  
 [username@ c3ddb01.mit.edu ~]$ chmod 777 SSHKEY.ppk
