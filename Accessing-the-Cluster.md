@@ -10,9 +10,9 @@ There are multiple SSH clients available for Microsoft Windows, each will connec
 4. Specify “c3ddb01.mit.edu” as the remote host and click “OK”:
 5. Your connection will be saved on the left sidebar, so the next time you can start your session by clicking the “c3ddb01.mit.edu [SSH]” link. In the terminal window you will get a prompt to enter your login information and password _(Note that the characters in your password will not be displayed when you type them as a security precaution):_
  
-Alternatively, open the MobaXterm terminal and type:
+6. Alternatively, open the MobaXterm terminal and type:                     
 ssh -i ‘PATH-TO-\c3ddb-key.ppk' -l USERNAME c3ddb01.mit.edu
-Enter passphrase when prompted.
+7. Enter passphrase when prompted.
  
 Connecting to the SCC from Apple OS X
 The Secure SHell (SSH) is built into the Apple OS X operating system. To connect to the SCC, we will leverage this utility using the Terminal application.
