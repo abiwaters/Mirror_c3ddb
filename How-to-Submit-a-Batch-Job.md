@@ -49,6 +49,7 @@ printenv
 
 
 Below is the list of some of the most commonly used directives:
+
 **General Directives:**
 
 **Directive:**
