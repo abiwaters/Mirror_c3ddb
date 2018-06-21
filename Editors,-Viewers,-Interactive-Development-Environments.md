@@ -1,15 +1,14 @@
 **Editors:**
 An editor is what you use to manipulate a text file, such as program code or a batch script.
 
-Command                                               Description
-gedit                       Easy to use Notepad-like text editor. Recommended for new users. Requires [X Forwarding](http://www.bu.edu/tech/support/research/system-usage/getting-started/x-forwarding/).
+Command:
+* gedit: Easy to use Notepad-like text editor. Recommended for new users. Requires [X Forwarding (http://www.bu.edu/tech/support/research/system-usage/getting-started/x-forwarding/).
 
-emacs            Programming text editor. Extremely extensible and configurable by advanced users. The default version 
-                            requires X Forwarding but you can use the **-nw** (no windows) option to avoid this.
+* emacs: Programming text editor. Extremely extensible and configurable by advanced users. The default version requires X Forwarding but you can use the **-nw** (no windows) option to avoid this.
 
-vi, vim, gvim                        Visual text editor. Only **gvim** requires X Forwarding
+* vi, vim, gvim: Visual text editor. Only **gvim** requires X Forwarding
 
-nano                                      GNU text editor with command-line interface.
+* nano: GNU text editor with command-line interface.
 
 **Image and Document Viewers and Editors:**
 These tools are used to display images and documents in formats more complex than ASCII text, such as PDF, HTML, and .CSV files. Most of these tools require X Forwarding.
