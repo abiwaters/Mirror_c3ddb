@@ -28,5 +28,5 @@ Interactive Websites:
 
 Most commands have a manual page that can be accessed using the “man” command.
 
-* [username@ c3ddb01.mit.edu ~]$ man hostname
-Note: “q” quits the manual pager.
+* [username@ c3ddb01.mit.edu ~]$ man hostname                                      
+_Note: “q” quits the manual pager._
