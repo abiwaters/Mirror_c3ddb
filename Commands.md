@@ -15,7 +15,7 @@ Interactive Websites:
 **Commands, Arguments and Options:**
 
 **Commands** are issued to the system by typing in the terminal; some are straightforward and are entered as is.
-*  whoami simply returns the username of the current user.
+*  #whoami simply returns the username of the current user.
 * [username@ c3ddb01.mit.edu ~]$ whoami 
 username
 
