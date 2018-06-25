@@ -1,4 +1,4 @@
-Non-interactive batch jobs are submitted with the [qsub](http://scv.bu.edu/scc_manpages/qsub.txt) command. The general form of the command is:
+Non-interactive batch jobs are submitted with the qsub command. The general form of the command is:
 
 scc % **qsub** _[options] command [arguments]_
 
