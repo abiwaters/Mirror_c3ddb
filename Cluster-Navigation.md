@@ -4,9 +4,8 @@ This page describes the filesystem structure on c3ddb as well as commands for ba
 
 The Linux filesystem starts at the “**root**” (/) and extends forward into directories that can contain both subdirectories and files. A series of decending directories can be strung together separated by slash characters (“/”) to indicate a location on the filesystem. This string of folders is called a “**path**” and will look like _/project/projectname/subfolder/file._  This structure is much like that on other common operating systems. 
 
-_/usr#/university_status/username_ : Each user has a “home directory,” this is the directory you are put in when you first log in each session.
-_/project/projectname_ : Backed up Project Disk Space is backed up to another location each night.
-_/projectnb/projectname_ : Not backed up (“nb”) Project Disk Space.
+_/username_ : Each user has a “home directory,” this is the directory you are put in when you first log in each session.
+_/scratch/username_ : Directory for jobs and intermediate files in stages of processing. In order to facilitate research projects, the scratch space has few limits placed on storage. However, it is not supposed to be used for long term storage. After processes are complete, data should be moved out of scratch space.  
 
 Working with Files/Directories
 
@@ -37,7 +36,7 @@ C3ddb% **ls -l** newdir
 total 0
 drwxr-xr-x 3 adftest2 adftest 512 Oct 28 16:03 newdir
 
-The letters on the left (“drwxr-xr-x”) indicate the “permissions” of this file/directory. The “d” indicates that it is a directory. The next 9 characters indicate that is is “readable”, “writable”, and “executable” by you and “readable” and “executable” by both the members of your project group and the world. The commands you can use to change these “permissions” are [chmod](https://weblogin.bu.edu//web@login3?jsv=1.5p&br=un&fl=0) and [umask](https://weblogin.bu.edu//web@login3?jsv=1.5p&br=un&fl=0).
+The letters on the left (“drwxr-xr-x”) indicate the “permissions” of this file/directory. The “d” indicates that it is a directory. The next 9 characters indicate that is is “readable”, “writable”, and “executable” by you and “readable” and “executable” by both the members of your project group and the world. The commands you can use to change these “permissions” are chmod and umask.
 
 Move and/or rename a File:
 
