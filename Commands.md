@@ -7,9 +7,9 @@ After connecting to the Shared Computing Cluster, you will be presented with a c
 Regardless of your shell, your interaction with the cluster will be nearly identical. This prompt lets you type in Linux commands to the system, to create directories, list files, and do more complex things like run applications. Make sure to hit the “Enter” key after typing in any of the commands shown on this page.
 
 If you are completely new to bash, we recommend some tutorials below to orient you to the shell language. This is not an exhaustive list by any means: 
-Videos:
-PDF Tutorials:
-Interactive Websites:
+https://ryanstutorials.net/bash-scripting-tutorial/
+https://linuxconfig.org/bash-scripting-tutorial-for-beginners
+https://www.shellscript.sh/
 
                                                                                                                          
 **Commands, Arguments and Options:**
