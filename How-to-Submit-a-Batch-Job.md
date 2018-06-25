@@ -7,9 +7,9 @@ For example, to submit the printenv command to the batch system, execute:
 scc % **qsub** -b y printenv
 Your job _#jobID_ ("printenv") has been submitted
 
-The option -b y tells the batch system that the following command is a binary executable. The output message of the qsub command will print the job ID, which you can use to [monitor the job's status](http://www.bu.edu/tech/support/research/system-usage/running-jobs/tracking-jobs/) within the queue. While the job is running the batch system creates stdout and stderr files in the job’s working directory, which are named after the job with the extension ending in the job’s number, for the above example printenv.o#jobID and printenv.e#jobID. The first one will contain the output of the command and the second will have the list of errors, if any, that occurred while the job was running.
+The option -b y tells the batch system that the following command is a binary executable. The output message of the qsub command will print the job ID, which you can use to monitor the job's status within the queue. While the job is running the batch system creates stdout and stderr files in the job’s working directory, which are named after the job with the extension ending in the job’s number, for the above example printenv.o#jobID and printenv.e#jobID. The first one will contain the output of the command and the second will have the list of errors, if any, that occurred while the job was running.
 
-When running a program that requires arguments and passes additional options to the batch system, it quickly becomes useful to save them in a script file and submit this script as an argument to the qsub command. For example, the following script script.sh will execute a simple [MATLAB](http://www.bu.edu/tech/support/research/software-and-programming/common-languages/matlab/) job:
+When running a program that requires arguments and passes additional options to the batch system, it quickly becomes useful to save them in a script file and submit this script as an argument to the qsub command. For example, the following script script.sh will execute a simple MATLAB job:
 
 #!/bin/bash
  
@@ -23,10 +23,10 @@ To submit this script.sh file to the batch system, execute:
 scc % **qsub** script.sh
 Your job _#jobID_ ("script.sh") has been submitted
 
-For other batch script examples, please see [Batch Script Examples](http://www.bu.edu/tech/support/research/system-usage/running-jobs/batch-script-examples/).
+For other batch script examples, please see Batch Script Examples.
 
 **Software Versions and the Module Command:**
-The default versions of many applications (like MATLAB, R, Python, gcc compiler, etc.) are old. To get access to newer versions of the software, please use [Modules](http://www.bu.edu/tech/support/research/software-and-programming/software-and-applications/modules/). When a **module** command is used in a bash script, the first line of the script must contain the “**-l**” option to ensure proper handling of the module command:
+The default versions of many applications (like MATLAB, R, Python, gcc compiler, etc.) are old. To get access to newer versions of the software, please use Modules. When a **module** command is used in a bash script, the first line of the script must contain the “**-l**” option to ensure proper handling of the module command:
 
 #!/bin/bash -l
  
@@ -67,7 +67,7 @@ Below is the list of some of the most commonly used directives:
 * **-hold_jid** _job_list_ : Setup job dependency list. job_list is a comma separated list of job ids and/or job names which must complete before this job can run. See [Advanced Batch System Usage](http://www.bu.edu/tech/support/research/system-usage/running-jobs/advanced-batch/) for more information.
 
 **Resource Usage and Limits:**
-The Sun Grid Engine (SGE) allows a job to request specific [SCC resources](http://www.bu.edu/tech/support/research/system-usage/running-jobs/resources-jobs/) necessary for a successful run, including a node with large memory, multiple CPUs, a specific queue, or a node with a specific architecture. The [Technical Summary](http://www.bu.edu/tech/support/research/computing-resources/tech-summary/) contains hardware configuration for all SCC nodes. The [Advanced Batch System Usage](http://www.bu.edu/tech/support/research/system-usage/running-jobs/advanced-batch/) page contains examples of running jobs which require parallel environments (OMP, MPI, GPU).
+The Sun Grid Engine (SGE) allows a job to request specific SCC resources necessary for a successful run, including a node with large memory, multiple CPUs, a specific queue, or a node with a specific architecture. The Technical Summary contains hardware configuration for all SCC nodes. The Advanced Batch System Usage page contains examples of running jobs which require parallel environments (OMP, MPI, GPU).
 
 The following table lists the most commonly used options to request resources available on the SCC:
 
@@ -78,11 +78,11 @@ The following table lists the most commonly used options to request resources av
 * **-l mem_total** =_#G_ : Request a node that has at least this amount of memory. Current possible choices include 94G, 125G, 252G, 504G, and 1000G
 * **-l mem_per_core** =_#G_ : Request a node that has at least this amount of memory per core. Current possible choices include 3G, 4G, 8G, 12G, 16G, 18G and 28G
 * **-pe omp** _N_ : Request multiple slots for Shared Memory applications (OpenMP, pthread). This option can also be used to reserve a larger amount of memory for the application. N can vary 1-28, 36.
-* **-pe mpi_#_tasks_per_node** _N_ : Select multiple nodes for an MPI job. Number of tasks can be 4, 8, 12, 16, or 28 and Nmust be a multiple of this value. See [Running Parallel Batch Jobs](http://www.bu.edu/tech/support/research/system-usage/running-jobs/parallel-batch/) for more information.
-* **-t** _N_ : Submit an Array Job with N tasks. N can be up to 75,000. For more information see [Array Jobs](http://www.bu.edu/tech/support/research/system-usage/running-jobs/advanced-batch/#array)
-* **-l cpu_arch**=_ARCH_ : Select a processor architecture (broadwell, haswell, ivybridge, …). See [Technical Summary](http://www.bu.edu/tech/support/research/computing-resources/tech-summary/) for all available choices.
-* **-l cpu_type**=_TYPE_ : Select a processor type (X5650, X5670, X5675, etc.) See Technical Summary for all available choices.
-* **-l gpus**=_G/C_ : Requests a node with GPUs. G/C specifies the number of GPUs per CPU requested and should be expressed as a decimal number. See [GPU Computing](http://www.bu.edu/tech/support/research/software-and-programming/programming/multiprocessor/gpu-computing/) for more information.
+* **-pe mpi_#_tasks_per_node** _N_ : Select multiple nodes for an MPI job. Number of tasks can be 4, 8, 12, 16, or 28 and Nmust be a multiple of this value. 
+* **-t** _N_ : Submit an Array Job with N tasks. N can be up to 75,000. 
+* **-l cpu_arch**=_ARCH_ : Select a processor architecture (broadwell, haswell, ivybridge, …). 
+* **-l cpu_type**=_TYPE_ : Select a processor type (X5650, X5670, X5675, etc.) 
+* **-l gpus**=_G/C_ : Requests a node with GPUs. G/C specifies the number of GPUs per CPU requested and should be expressed as a decimal number. 
 * **-l gpu_type**=_GPUMODEL_ : Current choices for _GPUMODEL_ are M2070, K40m, and P100.
 * **-l gpu_c**=_CAPABILITY_ : Specify minimum GPU capability. Current choices for _CAPABILITY_ are 2.0, 3.5, and 6.0
 
