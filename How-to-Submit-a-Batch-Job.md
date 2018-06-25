@@ -64,7 +64,7 @@ Below is the list of some of the most commonly used directives:
 * **-M** _user_email_ : Overwrites the default email address used to send the job report.
 * **-V** : All current environment variables should be exported to the batch job.
 * **-v** _env=value_ : Set the runtime environment variable _env_ to _value_.
-* **-hold_jid** _job_list_ : Setup job dependency list. job_list is a comma separated list of job ids and/or job names which must complete before this job can run. See [Advanced Batch System Usage](http://www.bu.edu/tech/support/research/system-usage/running-jobs/advanced-batch/) for more information.
+* **-hold_jid** _job_list_ : Setup job dependency list. job_list is a comma separated list of job ids and/or job names which must complete before this job can run. 
 
 **Resource Usage and Limits:**
 The Sun Grid Engine (SGE) allows a job to request specific SCC resources necessary for a successful run, including a node with large memory, multiple CPUs, a specific queue, or a node with a specific architecture. The Technical Summary contains hardware configuration for all SCC nodes. The Advanced Batch System Usage page contains examples of running jobs which require parallel environments (OMP, MPI, GPU).
