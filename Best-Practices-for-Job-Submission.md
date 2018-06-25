@@ -7,7 +7,7 @@ Request jobs with the minimum number of processors needed, as it will make your 
 
 Use checkpoints! If there are breaks in your workflow, save the current state to a checkpoint file. This will allow you to restart your job from the last successful state instead of rerunning it from the beginning in case the job failed due to an error or failed to complete before the hard time limit.
 
-Use a [job array](http://www.bu.edu/tech/support/research/system-usage/running-jobs/batch-script-examples/#ARRAY) instead of submitting many individual jobs when possible.
+Use a job array instead of submitting many individual jobs when possible.
 
 Do not submit many short jobs. If your jobs take just a few minutes combine them into a single script – this will reduce the workload on the system and will help to avoid generating tons of tiny files, which are a problem for the system and generally annoying for the user. 
 
