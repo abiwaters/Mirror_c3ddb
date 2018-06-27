@@ -19,7 +19,7 @@ The Secure SHell (SSH) is built into the Apple OS X operating system. To connect
 
 Using Terminal to Connect to the SCC
 
-1. Open the **Terminal **application, which is found in Applications >> Utilities >> Terminal. Alternatively, press **<command>** and **<space>** simultaneously to open Spotlight, search for Terminal and press **<return>**.
+1. Open the **Terminal** application, which is found in Applications >> Utilities >> Terminal. Alternatively, press **<command>** and **<space>** simultaneously to open Spotlight, search for Terminal and press **<return>**.
 2. In the terminal, type: ssh username@ c3ddb01.mit.edu.
 3. Enter your passphrase when requested. _Note that the characters in your password will not be displayed when you type them as a security precaution._
 4. Type **exit** in the terminal when you are done working on the SCC.
