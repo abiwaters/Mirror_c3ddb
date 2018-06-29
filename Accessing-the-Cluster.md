@@ -15,6 +15,7 @@ ssh -i ‘PATH-TO-\c3ddb-key.ppk' -l USERNAME c3ddb01.mit.edu
 7. Enter passphrase when prompted.
  
 **Connecting to c3ddb from Apple OS X:**
+
 The Secure SHell (SSH) is built into the Apple OS X operating system. To connect to the SCC, we will leverage this utility using the Terminal application.
 
 **Using Terminal to Connect to c3ddb:**
