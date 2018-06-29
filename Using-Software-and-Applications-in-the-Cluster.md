@@ -2,7 +2,9 @@ On c3ddb, software and application environments are often controlled using “mo
 
 **How to view and load modules:**
 
-> * module list                             /* List loaded modules
+> * module list                           
+***
+  /* List loaded modules
 > * module avail                            /* List modules available on the system
 > * module load {module name}               /* add module you need. Default is the latest version
 > * module load {module name/version}       /* add a specific version of the module
