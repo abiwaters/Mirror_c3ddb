@@ -1,7 +1,6 @@
 On c3ddb, software and application environments are often controlled using “modules.” This page will cover the basics of choosing, loading and using modules on the cluster.
 
 **How to view and load modules:**
- | 
 ------------ | -------------
 module list | /* List loaded modules
 module avail | /* List modules available on the system
