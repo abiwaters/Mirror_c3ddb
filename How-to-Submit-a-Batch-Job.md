@@ -7,32 +7,19 @@
 >                -p <name> : specific partition
 >                --time=<hh:min:sec> : run time
 >                —-exclusive : using all 16 cores on a single node
-
-> cat < 
-
-> myjob.slurm
-
-> #!/bin/bash
-
-> #SBATCH --gres=gpu:1
-
-> #SBATCH -N 1
-
-> #SBATCH -n 16
-
-> #SBATCH --time=1:00:00
-
-> #SBATCH --exclusive
-
-> . /etc/profile.d/modules.sh
-
-> module add gcc
-
-> module add mvapich2/gcc
-
-> /cm/shared/apps/cuda55/sdk/current/1_Utilities/deviceQuery/deviceQuery
-
-> sbatch myjob.slurm
+>        cat <
+>        myjob.slurm
+>        #!/bin/bash
+>        #SBATCH --gres=gpu:1
+>        #SBATCH -N 1
+>        #SBATCH -n 16
+>        #SBATCH --time=1:00:00
+>        #SBATCH --exclusive
+>        . /etc/profile.d/modules.sh
+>        module add gcc
+>        module add mvapich2/gcc
+>        /cm/shared/apps/cuda55/sdk/current/1_Utilities/deviceQuery/deviceQuery
+>        sbatch myjob.slurm
 
 **Non-interactive batch jobs** are submitted with the qsub command. The general form of the command is:
 
