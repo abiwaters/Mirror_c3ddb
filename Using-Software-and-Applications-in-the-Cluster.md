@@ -2,6 +2,7 @@ On c3ddb, software and application environments are often controlled using “mo
 
 **How to view and load modules:**
 
+Command | Description 
 ------------ | -------------
 module list | /* List loaded modules
 module avail | /* List modules available on the system
