@@ -50,7 +50,6 @@ This version released on 2011-03-25
  
 * #This program facilitates meta-analysis of genome-wide association studies.
 * #Commonly used commands are listed below:
-* #
 * #Options for describing input files ...
 * #SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
 * #COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
