@@ -1,4 +1,4 @@
-Before using the cluster, you must request a username affiliated with your institution. Please consult with your local computing research management (or IT services) to discuss HPC use agreements before submitting a request. Once you are ready to request access: 
+Before using the cluster, you must request a username affiliated with your institution. _Anyone who is MIT employed or working within the MIT research community can request access._ Otherwise, please consult with your local computing research management (or IT services) to discuss HPC use agreements before submitting a request. Once you are ready to request access: 
 
 Fill out the [c3ddb Account Request Form](https://c3ddb01.mit.edu/request_account) with:
 
