@@ -1,4 +1,4 @@
-**How to Submit an Interactive Job**
+**How to Submit an Interactive Job using [SLURM](https://github.com/mghpcc-projects/rc_howtos/blob/master/general/SlurmSummary.pdf)**
 
 >        salloc -N 1 -n 16 -p {partition name} --time=1:00:00 -exclusive
 >        where:
