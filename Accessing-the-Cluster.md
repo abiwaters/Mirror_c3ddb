@@ -11,7 +11,7 @@ There are multiple SSH clients available for Microsoft Windows, each will connec
 5. Your connection will be saved on the left sidebar, so the next time you can start your session by clicking the “c3ddb01.mit.edu [SSH]” link. In the terminal window you will get a prompt to enter your login information and password _(Note that the characters in your password will not be displayed when you type them as a security precaution):_
  
 6. Alternatively, open the MobaXterm terminal and type:                     
-ssh -i ‘PATH-TO-\c3ddb-key.ppk' -l USERNAME c3ddb01.mit.edu
+-i /path/to/sshkey -l {username} c3ddb01.mit.edu
 7. Enter passphrase when prompted.
  
 **Connecting to c3ddb from Apple OS X:**
@@ -21,7 +21,7 @@ The Secure SHell (SSH) is built into the Apple OS X operating system. To connect
 **Using Terminal to Connect to c3ddb:**
 
 1. Open the **Terminal** application, which is found in Applications >> Utilities >> Terminal. Alternatively, press **<command>** and **<space>** simultaneously to open Spotlight, search for Terminal and press **<return>**.
-2. In the terminal, type: ssh username@ c3ddb01.mit.edu.
+2. In the terminal, type:-i /path/to/sshkey -l {username} c3ddb01.mit.edu
 3. Enter your passphrase when requested. _Note that the characters in your password will not be displayed when you type them as a security precaution._
 4. Type **exit** in the terminal when you are done working on the SCC.
 
@@ -33,6 +33,6 @@ The Secure SHell (SSH) is built into the Linux operating system. To connect to t
 
 1. Open a Terminal. This can be done by opening the terminal application in Systems >> Accessories >> Terminal or by using the hot-key Ctrl + Alt + T
 2. Use **ssh** to connect to the SCC with your login credentials, using a command similar to this example:
-your_local_machine% ssh yourLoginName@ c3ddb01.mit.edu
+your_local_machine% -i /path/to/sshkey -l {username} c3ddb01.mit.edu
 3. Enter your passphrase when prompted. _Note that the characters in your password will not be displayed when you type them as a security precaution._
 4. When finished, type **exit** to close the session.
