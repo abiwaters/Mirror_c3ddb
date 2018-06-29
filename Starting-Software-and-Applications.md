@@ -2,7 +2,7 @@ On c3ddb, software and application environments are often controlled using “mo
 
 **Start Application Without Modules:**
 
-Some applications on the Shared Computing Cluster do not require modules. Notable examples are **matlab** and **sas**. To run these applications and basic system commands, simply type the application name.                         
+Some applications on c3ddb do not require modules. Notable examples are **matlab** and **sas**. To run these applications and basic system commands, simply type the application name.                         
 [username@c3ddb ~]$ **matlab**
 
 
