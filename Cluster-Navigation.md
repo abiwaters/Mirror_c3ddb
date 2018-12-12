@@ -4,7 +4,7 @@ This page describes the filesystem structure on c3ddb as well as commands for ba
 
 The Linux filesystem starts at the “**root**” (/) and extends forward into directories that can contain both subdirectories and files. A series of decending directories can be strung together separated by slash characters (“/”) to indicate a location on the filesystem. This string of folders is called a “**path**” and will look like _/project/projectname/subfolder/file._  This structure is much like that on other common operating systems. 
 
-_/username_ : Each user has a “home directory,” this is the directory you are put in when you first log in each session.
+_/home/username_ : Each user has a “home directory,” this is the directory you are put in when you first log in each session.
 
 _/scratch/users/username_ : Directory for jobs and intermediate files in stages of processing. In order to facilitate research projects, the scratch space has few limits placed on storage. However, it is not supposed to be used for long term storage. After processes are complete, data should be moved out of scratch space.  
 
@@ -15,7 +15,7 @@ Below are some simple examples of basic Linux commands for accessing and changin
 Show the current “full path”, the directory you are in with its parent and all levels of grandparents up to the root directory (/):
 
 * C3ddb% pwd
-* /usr2/collab/adftest2
+* home/usr2/collab/adftest2
 
 Create a file:
 
