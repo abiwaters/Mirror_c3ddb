@@ -2,11 +2,11 @@ This page describes the filesystem structure on c3ddb as well as commands for ba
 
 **Filesystem Structure:**
 
-The Linux filesystem starts at the “**root**” (/) and extends forward into directories that can contain both subdirectories and files. A series of decending directories can be strung together separated by slash characters (“/”) to indicate a location on the filesystem. This string of folders is called a “**path**” and will look like _/project/projectname/subfolder/file._  This structure is much like that on other common operating systems. 
+The Linux filesystem starts at the “**root**” (/) and extends forward into directories that can contain both subdirectories and files. A series of decending directories can be strung together separated by slash characters (“/”) to indicate a location on the filesystem. This string of folders is called a “**path**” and will look like _/home/username/projectname/subfolder/file._  This structure is much like that on other common operating systems. 
 
 _/home/username_ : Each user has a “home directory,” this is the directory you are put in when you first log in each session.
 
-_/scratch/users/username_ : Directory for jobs and intermediate files in stages of processing. In order to facilitate research projects, the scratch space has few limits placed on storage. However, it is not supposed to be used for long term storage. After processes are complete, data should be moved out of scratch space.  
+_/scratch/users/username_ : Directory for jobs and intermediate files in stages of processing. In order to facilitate research projects, the scratch space has few limits placed on storage. It is important that files are removed when they are no longer needed.
 
 Working with Files/Directories
 
@@ -14,8 +14,8 @@ Below are some simple examples of basic Linux commands for accessing and changin
 
 Show the current “full path”, the directory you are in with its parent and all levels of grandparents up to the root directory (/):
 
-* C3ddb% pwd
-* home/usr2/collab/adftest2
+`use actual c3ddb prompt% pwd`
+`home/usr2/collab/adftest2`
 
 Create a file:
 
@@ -49,7 +49,7 @@ Move to a different directory:
 
 * c3ddb% **cd** _newdir_
 
-Move to the newly created _newdir_ directory. You can also specify a “full path” (a path that starts with a /) such as **cd /usr/local/bin**. Typing just **cd** (or **cd .**) by itself will always take you to your home directory.
+Move to the newly created _newdir_ directory. You can also specify a “full path” (a path that starts with a /) such as **cd /usr/local/bin**. Typing just **cd** (or **cd~**) by itself will always take you to your home directory.
 
 Copy a file:
 
