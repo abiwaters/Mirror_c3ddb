@@ -16,6 +16,7 @@ If you are completely new to bash, we recommend some tutorials below to orient y
 
 **Commands** are issued to the system by typing in the terminal; some are straightforward and are entered as is.
 * #_whoami simply returns the username of the current user.
+
 `[username@ c3ddb01.mit.edu ~]$ whoami`
 
 `username`
@@ -29,6 +30,7 @@ If you are completely new to bash, we recommend some tutorials below to orient y
 
 **Options** instruct a command to perform a task in different ways. To use these expanded functions, you use the same command and specify different “options.” Options are usually preceded by a dash (-) or double-dash (–) if a full word is used.
 * #_hostname returns the name of the system you are currently using. The -f "option" returns the full name.
+
 `[username@ c3ddb01.mit.edu ~]$ hostname -f`
 
 `c3ddb01.mit.edu`
