@@ -14,23 +14,23 @@ Below are some simple examples of basic Linux commands for accessing and changin
 
 Show the current “full path”, the directory you are in with its parent and all levels of grandparents up to the root directory (/):
 
-`use actual c3ddb prompt% pwd`
+`**[username@ c3ddb01.mit.edu ~]$** pwd`
 `home/usr2/collab/adftest2`
 
 Create a file:
 
-C3ddb% touch _myfile_
+`**[username@ c3ddb01.mit.edu ~]$** touch _myfile_`
 
 This command will create a blank file named _myfile_. You will also want to be able to use an editor to create or modify an existing text file. A simple graphical editor to use is gedit, but more complex editors like emacs and vi are also available.
 
 Create a new directory:
 
-C3ddb% **mkdir** newdir
+`**[username@ c3ddb01.mit.edu ~]$** mkdir newdir`
 
 List the files, including other directories, in the current directory:
 
-* C3ddb% **ls** newdir
-* newdir
+`**[username@ c3ddb01.mit.edu ~]$** ls newdir`
+`newdir`
 
 There are many options to the **ls** command such as **ls** **-l** to list the files in the current directory in “long” (verbose) format such as:
 C3ddb% **ls -l** newdir
