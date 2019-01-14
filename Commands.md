@@ -15,21 +15,21 @@ If you are completely new to bash, we recommend some tutorials below to orient y
 **Commands, Arguments and Options:**
 
 **Commands** are issued to the system by typing in the terminal; some are straightforward and are entered as is.
-* #_whoami simply returns the username of the current user.
+* **whoami** simply returns the username of the current user.
 
 `[username@ c3ddb01.mit.edu ~]$ whoami`
 
 `username`
 
 **Arguments** are given to some commands to specify what the command should do something to or with. Often arguments are filenames (that the command will work with) or text (that the command will use).
-* #_echo takes an "argument" and returns it to the screen (stdout).
+* **echo** takes an "argument" and returns it to the screen (stdout).
 
 `[username@ c3ddb01.mit.edu ~]$ echo "Hello"`
 
 `Hello`
 
 **Options** instruct a command to perform a task in different ways. To use these expanded functions, you use the same command and specify different “options.” Options are usually preceded by a dash (-) or double-dash (–) if a full word is used.
-* #_hostname returns the name of the system you are currently using. The -f "option" returns the full name.
+* **hostname** returns the name of the system you are currently using. The -f "option" returns the full name.
 
 `[username@ c3ddb01.mit.edu ~]$ hostname -f`
 
