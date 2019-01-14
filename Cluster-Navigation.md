@@ -14,12 +14,12 @@ Below are some simple examples of basic Linux commands for accessing and changin
 
 Show the current “full path”, the directory you are in with its parent and all levels of grandparents up to the root directory (/):
 
-`**[username@ c3ddb01.mit.edu ~]$** pwd`
-`home/usr2/collab/adftest2`
+`[username@ c3ddb01.mit.edu ~]$ pwd
+home/usr2/collab/adftest2`
 
 Create a file:
 
-`**[username@ c3ddb01.mit.edu ~]$** touch _myfile_`
+`[username@ c3ddb01.mit.edu ~]$ touch _myfile_`
 
 This command will create a blank file named _myfile_. You will also want to be able to use an editor to create or modify an existing text file. A simple graphical editor to use is gedit, but more complex editors like emacs and vi are also available.
 
