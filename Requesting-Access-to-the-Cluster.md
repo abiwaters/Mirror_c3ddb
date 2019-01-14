@@ -16,7 +16,7 @@ Fill out the [c3ddb Account Request Form](https://c3ddb01.mit.edu/request_accoun
 
 	* Username (if possible, please request the username that is used by your institutional email)
 
-	* Passphrase (**Note: Although SSH keys are used, you will need to save your passphrase to log in.** If you lose your passphrase you will need to reset your SSH key.)
+	* Passphrase (**Note: Although SSH keys are used, you will need to save your passphrase to log in. Passphrases may contain spaces or symbols** If you lose your passphrase you will need to reset your SSH key.)
 
 Once you click submit, your SSH keys will begin download immediately. Save these to your local machine. 
 
