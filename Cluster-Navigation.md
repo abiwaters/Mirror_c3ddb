@@ -14,7 +14,7 @@ Below are some simple examples of basic Linux commands for accessing and changin
 
 Show the current “full path”, the directory you are in with its parent and all levels of grandparents up to the root directory (/):
 
-`**[username@ c3ddb01.mit.edu ~]$ **pwd`
+`[username@ c3ddb01.mit.edu ~]$ pwd`
 
 `home/usr2/collab/adftest2`
 
@@ -26,41 +26,49 @@ This command will create a blank file named _myfile_. You will also want to be a
 
 Create a new directory:
 
-`**[username@ c3ddb01.mit.edu ~]$** mkdir newdir`
+`[username@ c3ddb01.mit.edu ~]$ mkdir newdir_namehere`
 
 List the files, including other directories, in the current directory:
 
-`**[username@ c3ddb01.mit.edu ~]$** ls newdir`
+`[username@ c3ddb01.mit.edu ~]$ ls newdir`
+
 `newdir`
 
 There are many options to the **ls** command such as **ls** **-l** to list the files in the current directory in “long” (verbose) format such as:
-C3ddb% **ls -l** newdir
-total 0
-drwxr-xr-x 3 adftest2 adftest 512 Oct 28 16:03 newdir
+`[username@ c3ddb01.mit.edu ~]$ ls -l newdir`
+
+`total 0`
+
+`drwxr-xr-x 3 adftest2 adftest 512 Oct 28 16:03 newdir`
 
 The letters on the left (“drwxr-xr-x”) indicate the “permissions” of this file/directory. The “d” indicates that it is a directory. The next 9 characters indicate that is is “readable”, “writable”, and “executable” by you and “readable” and “executable” by both the members of your project group and the world. The commands you can use to change these “permissions” are chmod and umask.
 
 Move and/or rename a File:
 
-* c3ddb% **mv** _myfile newdir/newfilename_
+`[username@ c3ddb01.mit.edu ~]$ mv _myfile newdir/newfilename_`
 
 This command will move the file _myfile_ into the directory _newdir_ and simultaneously rename it to be called _newfilename_.
 
 Move to a different directory:
 
-* c3ddb% **cd** _newdir_
+`[username@ c3ddb01.mit.edu ~]$ cd _newdir_`
 
-Move to the newly created _newdir_ directory. You can also specify a “full path” (a path that starts with a /) such as **cd /usr/local/bin**. Typing just **cd** (or **cd~**) by itself will always take you to your home directory.
+Move to the newly created _newdir_ directory. You can also specify a “full path” (a path that starts with a /) such as 
+
+`[username@ c3ddb01.mit.edu ~]$ cd /usr/local/bin` 
+
+Typing just **cd** (or **cd~**) by itself will always take you to your home directory.
 
 Copy a file:
 
-* c3ddb% **cp** _newfilename filecopy_
+`[username@ c3ddb01.mit.edu ~]$ cp _newfilename filecopy_`
 
 This command will make a copy of _newfilename_ in the file _filecopy_. You can copy entire directories by using the **-r** (recursive) option.
 
 Delete a file:
 
-* c3ddb% **rm** _filecopy_
-* rm: remove regular empty file `filecopy'? y
+`[username@ c3ddb01.mit.edu ~]$ rm _filecopy_`
+
+`rm: remove regular empty file `filecopy'? y`
 
 By default you will be asked to confirm that you want to remove a file by typing y when asked. You could avoid this by using the command line option **-f** but then you must be much more careful. Empty directories are removed using the command **rmdir** _directory_name_. Full directories can be removed by again using the **-r**(recursive) option to **rm**.
