@@ -14,7 +14,7 @@ Below are some simple examples of basic Linux commands for accessing and changin
 
 Show the current “full path”, the directory you are in with its parent and all levels of grandparents up to the root directory (/):
 
-`_`[username@ c3ddb01.mit.edu ~]$`_ pwd`
+`**[username@ c3ddb01.mit.edu ~]$ **pwd`
 
 `home/usr2/collab/adftest2`
 
