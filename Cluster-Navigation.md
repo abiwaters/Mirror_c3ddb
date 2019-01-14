@@ -69,6 +69,6 @@ Delete a file:
 
 `[username@ c3ddb01.mit.edu ~]$ rm _filecopy_`
 
-`rm: remove regular empty file `filecopy'? y`
+`rm: remove regular empty file filecopy? y`
 
 By default you will be asked to confirm that you want to remove a file by typing y when asked. You could avoid this by using the command line option **-f** but then you must be much more careful. Empty directories are removed using the command **rmdir** _directory_name_. Full directories can be removed by again using the **-r**(recursive) option to **rm**.
