@@ -5,10 +5,10 @@ SLURM is used to help allocate resources for submitted jobs on the cluster. Jobs
 
 ` [username@c3ddb01@mit.edu/]$ sinfo`
 
-`PARTITION AVAIL TIMELIMIT NODES STATE  NODELIST
-batch     up     infinite     2 alloc  node[8-9]
-batch     up     infinite     6 idle   node[10-15]
-debug*    up        30:00     8 idle   node[0-7]`
+> `PARTITION AVAIL TIMELIMIT NODES STATE  NODELIST
+> batch     up     infinite     2 alloc  node[8-9]
+> batch     up     infinite     6 idle   node[10-15]
+> debug*    up        30:00     8 idle   node[0-7]`
 
 
  
