@@ -22,14 +22,14 @@ To list available packages use the module command with the “avail” argument
 
 `[username@c3ddb01@mit.edu/]$ module avail`
 
-> ---------------------------- /share/etc/modulefiles ----------------------------
-> BEAGLE/BEAGLE-3.3.2_jar_x86_64           locuszoom/1.2
-> CASAVA/CASAVA_v1.8.2_gnu446              log4perl/v1.43
-> CPAT/CPAT-1.2.1_Python-2.7.3_gnu446      mach/mach-1.0.18.c_gnu446
-> DELLY/0.0.11                             merlin/merlin-1.1.2_gnu446
-> EIGENSOFT/EIGENSOFT-4.2_gnu447           metal/metal_2011-03-25_gnu447
-> ...                                   ...
-
+>         ---------------------------- /share/etc/modulefiles ----------------------------
+>         BEAGLE/BEAGLE-3.3.2_jar_x86_64           locuszoom/1.2
+>         CASAVA/CASAVA_v1.8.2_gnu446              log4perl/v1.43
+>         CPAT/CPAT-1.2.1_Python-2.7.3_gnu446      mach/mach-1.0.18.c_gnu446
+>         DELLY/0.0.11                             merlin/merlin-1.1.2_gnu446
+>         EIGENSOFT/EIGENSOFT-4.2_gnu447           metal/metal_2011-03-25_gnu447
+>         ...                                   ...
+ 
 To load an application, invoke the module command with the “load” argument.
 
 `[username@c3ddb01@mit.edu/]$ module load merlin`
@@ -38,15 +38,15 @@ To run the application, type the application command.
 
 `[username@c3ddb01@mit.edu/]$ merlin --help`
  
-> MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
-> This version released on 2011-03-25
- 
-> #This program facilitates meta-analysis of genome-wide association studies.
-> #Commonly used commands are listed below:
-> #Options for describing input files ...
-> #SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
-> #COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
-> #MARKERLABEL      [LABEL]                     (default = 'MARKER')
+>          MetaAnalysis Helper - (c) 2007 - 2009 Goncalo Abecasis
+>          This version released on 2011-03-25
+> 
+>          #This program facilitates meta-analysis of genome-wide association studies.
+>          #Commonly used commands are listed below:
+>          #Options for describing input files ...
+>          #SEPARATOR        [WHITESPACE|COMMA|BOTH|TAB] (default = WHITESPACE)
+>          #COLUMNCOUNTING   [STRICT|LENIENT]            (default = 'STRICT')
+>          #MARKERLABEL      [LABEL]                     (default = 'MARKER')
 
 To unload a module, invoke the module command with the “unload” argument.
 
