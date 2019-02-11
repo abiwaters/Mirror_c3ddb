@@ -10,3 +10,7 @@ module load {module name} | /* add module you need. Default is the latest versio
 module load {module name/version} | /* add a specific version of the module
 module rm {module name} | /* remove module you do not need
 module initadd {module name} | /* add module when you login
+
+**If you're application is not listed:**
+
+You can install the application into your home directory, and set the path within your job submission script. If problems arise during this process, it is best to contact system administrators to assist on a case-by-case basis. 
