@@ -66,9 +66,4 @@ Where **SBATCH** is always at the top, after *#!/bin/bash*. Make sure that any m
 
 Additionally, [here](http://www.ceci-hpc.be/scriptgen.html) is a resource for generating slurm headers for your scripts.
 
-_SBATCH Options_
-
-![](https://drive.google.com/file/d/1b6jvHc4CHrX0FelS9zg_18gUh8kKS0oH/view?usp=sharing)
-
-
  
