@@ -64,5 +64,11 @@ Job submission scripts should have the following format **(Note: these are the m
 
 Where **SBATCH** is always at the top, after *#!/bin/bash*. Make sure that any modules needed for your job are loaded at the beginning of the script. 
 
+Additionally, [here](http://www.ceci-hpc.be/scriptgen.html) is a resource for generating slurm headers for your scripts.
+
+_SBATCH Options_
+
+![](https://drive.google.com/file/d/1b6jvHc4CHrX0FelS9zg_18gUh8kKS0oH/view?usp=sharing)
+
 
  
