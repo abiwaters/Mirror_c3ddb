@@ -1,3 +1,5 @@
+CONTACT FOR SYSTEM ADMIN: c3ddb-admin@techsquare.com
+
 **My institution is not an option when I try to request access:**
 
 You should communicate with your organization's information technology services or resources for high performance computing. If your organization does not already have an existing agreement with MGHPCC, they may be able to facilitate one. 
@@ -6,7 +8,7 @@ You should communicate with your organization's information technology services 
 
 First, make sure you are using the private key (ends with .ppk) and not the public key. 
 Next, make sure that the read permissions are set appropriately with  
-[username@ c3ddb01.mit.edu ~]$ chmod 777 SSHKEY.ppk
+`[username@ c3ddb01.mit.edu ~]$ chmod 777 SSHKEY.ppk`
   
 **I lost my passphrase or SSH key:** 
 
