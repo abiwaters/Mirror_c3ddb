@@ -8,10 +8,27 @@ SLURM is used to help allocate resources for submitted jobs on the cluster. Jobs
 
 ` [username@c3ddb01@mit.edu/]$ sinfo`
 
->         PARTITION AVAIL TIMELIMIT NODES STATE  NODELIST
->         batch     up     infinite     2 alloc  node[8-9]
->         batch     up     infinite     6 idle   node[10-15]
->         debug*    up        30:00     8 idle   node[0-7]
+>         PARTITION            AVAIL TIMELIMIT   NODES STATE  NODELIST
+>         defq                    up 5-00:00:00     18 drain* node[008-018,022,054,077-080,091]
+>         defq                    up 5-00:00:00      1   comp node095
+>         defq                    up 5-00:00:00     16    mix node[004,020,023-029,033,065,081-083,093,097]
+>         defq                    up 5-00:00:00     18  alloc node[006,019,021,030-032,055,069,084-090,092,094,096]
+>         defq                    up 5-00:00:00     32   idle node[034-053,056-064,066-068]
+>         quicktest*              up      15:00      4   idle node[001-003,005]
+>         sched_mem4TB            up 5-00:00:00      1  drain node201
+>         sched_mem1TB            up 5-00:00:00      2    mix node[300-301]
+>         sched_mem1TB            up 5-00:00:00     24   idle node[302-308,310-326]
+>         sched_mem1TB_centos7    up 5-00:00:00      8    mix node[070-076,327]
+>         sched_mem1TB_centos7    up 5-00:00:00      5   idle node[098,328-331]
+
+This is an example of the available nodes on c3ddb. When submitting a job, you will have to choose which partition (and therefore the kind of node) your job requires. Full details on these resources are available [here](http://www.mghpcc.org/resources/computer-systems-at-the-mghpcc/c3ddb/resources/). 
+
+A few simple rules for choosing the right partition:
+**quicktest** is for running test scripts that do no exceed 15 min. It can be helpful to test job submission scripts here so larger nodes are not used for troubleshooting. 
+
+**defq** is the partition used for most jobs. The _idle_ nodes are not in use, and therefore available for job submission. Be mindful of what resources are available when requesting jobs. If you request more nodes than are currently available, your job will only be started once all resources are idle. 
+
+**sched_mem** nodes are for jobs which require a large amount of RAM (or Main Memory) resources. Unless otherwise specified these nodes run using Centos 6. 
 
 * **sacct** is used to report job or job step accounting information about active or completed jobs
 
@@ -28,20 +45,19 @@ The easiest way to submit a job is to create a shell script and submit it with t
 
 ` [username@c3ddb01@mit.edu/]$ sbatch myscript.sh`
 
-Job submission scripts should have the following format:
+Job submission scripts should have the following format **(Note: these are the minimum parameters to run a job, to specify further options see chart here)**:
 
 >           #!/bin/bash
 >           #
->           #SBATCH -p general # partition (queue)
->           #SBATCH -N 1 # number of nodes
->           #SBATCH -n 1 # number of cores
->           #SBATCH --mem 100 # memory pool for all cores
->           #SBATCH -t 0-2:00 # time (D-HH:MM)
->           #SBATCH -o slurm.%N.%j.out # STDOUT
->           #SBATCH -e slurm.%N.%j.err # STDERR
->           for i in {1..100000}; do
->           echo $RANDOM >> SomeRandomNumbers.txt
->           donesort SomeRandomNumbers.txt
+>           #Select which kind of nodes will be used for job 
+>           #SBATCH -p defq
+>           #Output file
+>           #SBATCH -o slurm.%N.%j.out
+>           #Error/log file
+>           #SBATCH -e slurm.%N.%j.err
+>
+>           #The test command
+>           srun date
 
 
 
