@@ -24,6 +24,7 @@ SLURM is used to help allocate resources for submitted jobs on the cluster. Jobs
 This is an example of the available nodes on c3ddb. When submitting a job, you will have to choose which partition (and therefore the kind of node) your job requires. Full details on these resources are available [here](http://www.mghpcc.org/resources/computer-systems-at-the-mghpcc/c3ddb/resources/). 
 
 A few simple rules for choosing the right partition:
+
 **quicktest** is for running test scripts that do no exceed 15 min. It can be helpful to test job submission scripts here so larger nodes are not used for troubleshooting. 
 
 **defq** is the partition used for most jobs. The _idle_ nodes are not in use, and therefore available for job submission. Be mindful of what resources are available when requesting jobs. If you request more nodes than are currently available, your job will only be started once all resources are idle. 
