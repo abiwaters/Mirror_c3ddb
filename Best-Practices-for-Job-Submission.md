@@ -11,4 +11,3 @@ Use a job array instead of submitting many individual jobs when possible.
 
 Do not submit many short jobs. If your jobs take just a few minutes combine them into a single script – this will reduce the workload on the system and will help to avoid generating tons of tiny files, which are a problem for the system and generally annoying for the user. 
 
-Try to avoid creating many (thousands+) tiny files when possible. It is better for the system to have a smaller number of larger files. If you do need to have a very large number of files, you should store them in /XXXX to avoid a high cost on the system to back them up.
