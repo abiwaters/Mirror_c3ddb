@@ -66,6 +66,11 @@ Where **SBATCH** is always at the top, after *#!/bin/bash*. Make sure that any m
 
 Additionally, [here](http://www.ceci-hpc.be/scriptgen.html) is a resource for generating slurm headers for your scripts.
 
+If you need to cancel a job use the command **scancel** and specify either the jobid or the user
+
+` [username@c3ddb01@mit.edu/]$ scancel <jobid>`
+
+
 _SBATCH Options_
 
 ![](https://github.com/abiwaters/test/blob/master/sbatch_command.png)
