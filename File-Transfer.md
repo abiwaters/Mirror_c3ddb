@@ -1,6 +1,8 @@
 # File Transfer
 
-To download/upload files from a local computer, there are a number of software options. [Cyberduck](https://cyberduck.io/) or the **SFTP** function of MobaXTerm will allow for user-friendly download/upload to local machines. 
+To download/upload files from a local computer, there are a number of software options. [Cyberduck](https://cyberduck.io/) or the **SFTP** function of MobaXTerm will allow for user-friendly download/upload to local machines. **SCP** can also be used directly from the terminal, and the manual page is available on c3ddb with the following command:
+
+`[username@c3ddb01@mit.edu/]$ man scp`
 
 Many researchers use publicly available datasets. To download directly onto c33db from the internet, you will have to login to a globus node and submit the download script.
 
